@@ -49,12 +49,14 @@ class App extends Component {
 				   			return(
 				   				//Conditional statement in the className of below div to give callName="bg-pink"
 				   				//if the percent >= 90 else className = "" 
-				   				<div key={index} className={}>
+				   				<div key={index} className={item.percent >= 90 && 'big-pink'}>
 					   				<div className="name">
 					   					 //Write code to display name
+									<span>{item.name}</span>
 					   				</div>
 					   				<div className="percent">
 					   					 //Write code to display percentage upto 2 decimal places
+										<span>{item.percent.toFixed(2)}</span>
 					   				</div>
 				   				</div>
 				   				);
